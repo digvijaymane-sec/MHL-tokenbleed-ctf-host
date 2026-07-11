@@ -41,10 +41,8 @@ function decodeJWT(token){
     const payload = decodeJWT(jwt);
 
     out.textContent =
-        "JWT:\n\n" + jwt +
         "\n\n========================\n\n" +
-        "Payload:\n\n" +
-        JSON.stringify(payload,null,2) +
+        "JWT:\n\n" + jwt +
         "\n\n========================\n\n" +
         "FLAG:\n\n" +
         (payload.audit_ref || "Not Found");
