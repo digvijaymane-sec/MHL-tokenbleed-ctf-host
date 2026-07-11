@@ -1,11 +1,2 @@
 <!doctype html>
-<script src="https://cdn.jsdelivr.net/npm/dsbridge@3.1.4/dist/dsbridge.min.js"></script>
-
-<pre id="jwt">Waiting...</pre>
-
-<script>
-dsBridge.call("getUserAuth", {}, r => {
-  if (typeof r === "string") r = JSON.parse(r);
-  document.getElementById("jwt").textContent = r.data.authtoken;
-});
-</script>
+<h1>Hello</h1>
