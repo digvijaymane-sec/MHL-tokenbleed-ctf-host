@@ -1,10 +1,11 @@
 <!doctype html>
 
-<script src="https://cdn.jsdelivr.net/npm/dsbridge@3.1.4/dist/dsbridge.min.js"></script>
+<script src="dsbridge.min.js"></script>
 
-<h1>Hello</h1>
+<pre id="o"></pre>
 
 <script>
-alert("loaded");
-console.log("loaded");
-</script>
+document.getElementById("o").innerText =
+    "dsBridge = " + typeof window.dsBridge +
+    "\n_dsbridge = " + typeof window._dsbridge;
+</script>ii
